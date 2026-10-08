@@ -3,385 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confeitaria Rentável | Venda Doces e Tenha Lucro</title>
+    <title>Confeitaria doce encanto 🍬</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        :root {
-            --rosa: #FF6B8B;
-            --rosa-claro: #FFE4E9;
-            --dourado: #F5B841;
-            --marrom: #5C3A21;
-            --branco: #FFF9FA;
-        }
-
-        body {
-            background-color: var(--branco);
-            color: var(--marrom);
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--rosa), #FF8FA8);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .emoji { font-size: 2rem; }
-
-        nav {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            display: block;
-            padding: 15px 20px;
-            color: var(--marrom);
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--rosa);
-        }
-
-        section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        section h2 {
-            text-align: center;
-            font-size: 2rem;
-            color: var(--rosa);
-            margin-bottom: 40px;
-        }
-
-        .intro {
-            text-align: center;
-            font-size: 1.1rem;
-            background: var(--rosa-claro);
-            padding: 30px;
-            border-radius: 15px;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(255, 107, 139, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            color: var(--rosa);
-            margin-bottom: 15px;
-            font-size: 1.3rem;
-        }
-
-        .modulo {
-            background: white;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-        }
-
-        .modulo-cabecalho {
-            background: var(--rosa-claro);
-            padding: 18px 25px;
-            font-weight: bold;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .modulo-conteudo {
-            padding: 20px 25px;
-            display: none;
-        }
-
-        .modulo.aberto .modulo-conteudo {
-            display: block;
-        }
-
-        .preco-box {
-            background: linear-gradient(135deg, #FFF0F3, #FFE4E9);
-            border-radius: 20px;
-            padding: 50px 30px;
-            text-align: center;
-            border: 3px solid var(--rosa);
-        }
-
-        .preco-destaque {
-            font-size: 3rem;
-            font-weight: bold;
-            color: var(--rosa);
-            margin: 20px 0;
-        }
-
-        .botao {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--rosa), #FF4D6D);
-            color: white;
-            padding: 18px 40px;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-decoration: none;
-            margin-top: 25px;
-            box-shadow: 0 5px 20px rgba(255, 77, 109, 0.4);
-            transition: all 0.3s;
-        }
-
-        .botao:hover {
-            transform: scale(1.05);
-        }
-
-        .beneficios {
-            list-style: none;
-            margin-top: 20px;
-        }
-
-        .beneficios li {
-            padding: 10px 0;
-            border-bottom: 1px dashed #FFCDD8;
-        }
-
-        .beneficios li::before {
-            content: "✅ ";
-            font-weight: bold;
-        }
-
-        footer {
-            background: var(--marrom);
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 50px;
-        }
-
-        .destaque {
-            background: #FFF4B8;
-            padding: 2px 8px;
-            border-radius: 4px;
-        }
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif;}
+        body {background: #fff9fa; color: #5c3a21; line-height: 1.7;}
+        header {background: linear-gradient(135deg, #ff6b8b, #ff8fa8); color: white; text-align: center; padding: 50px 20px;}
+        header h1 {font-size: 2rem; margin-bottom: 10px;}
+        header p {font-size: 1.1rem;}
+        section {max-width: 900px; margin: 0 auto; padding: 40px 20px;}
+        h2 {color: #ff6b8b; text-align: center; margin-bottom: 30px; font-size: 1.6rem;}
+        .card {background: white; padding: 25px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 3px 10px rgba(255,107,139,0.1);}
+        .card h3 {color: #ff6b8b; margin-bottom: 10px;}
+        .destaque {background: #ffe4e9; padding: 25px; border-radius: 15px; text-align: center;}
+        .botao {display: inline-block; background: linear-gradient(135deg, #ff6b8b, #ff4d6d); color: white; padding: 15px 35px; border-radius: 50px; font-size: 1.1rem; font-weight: bold; text-decoration: none; margin-top: 20px;}
+        ul {margin-left: 20px; margin-top: 10px;}
+        li {margin-bottom: 8px;}
+        footer {background: #5c3a21; color: white; text-align: center; padding: 25px; margin-top: 30px; font-size: 0.9rem;}
     </style>
 </head>
 <body>
 
-<!-- Cabeçalho -->
 <header>
-    <span class="emoji">🍬</span>
+    <span style="font-size: 3rem;">🍬</span>
     <h1>Confeitaria Rentável</h1>
-    <p>Aprenda a transformar sua paixão por doces em um negócio lucrativo — e ensine outras pessoas a fazerem o mesmo!</p>
+    <p>Como Criar e Vender Seu Curso de Doces com Sucesso!</p>
 </header>
 
-<!-- Navegação -->
-<nav>
-    <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#modulos">Conteúdo</a></li>
-        <li><a href="#preco">Valor</a></li>
-        <li><a href="#contato">Contato</a></li>
-    </ul>
-</nav>
-
-<!-- Seção Início -->
-<section id="inicio">
-    <div class="intro">
-        <h2>💛 Olá, doce empreendedora!</h2>
-        <p>Se você já sabe fazer doces maravilhosos e quer ensinar outras pessoas a fazerem o mesmo — e ganhar dinheiro com isso — você está no lugar certo!</p>
-        <br>
-        <p>Este guia completo vai te mostrar <strong>passo a passo</strong> como criar, estruturar e vender seu curso de doces com confiança e resultados reais. Vamos lá? 🎉</p>
-    </div>
-</section>
-
-<!-- Seção Sobre -->
-<section id="sobre">
-    <h2>✨ Por que vender um curso de doces?</h2>
-    
-    <div class="cards">
-        <div class="card">
-            <h3>💰 Renda Escalável</h3>
-            <p>Crie o material uma vez e venda para centenas de pessoas! Quanto mais alunas, maior seu lucro — sem aumentar sua jornada de trabalho.</p>
-        </div>
-        
-        <div class="card">
-            <h3>🤝 Impacto Real</h3>
-            <p>Você ajuda pessoas a mudarem de vida! Suas alunas podem conquistar sua independência financeira com o que você ensinar.</p>
-        </div>
-        
-        <div class="card">
-            <h3>⏰ Mais Liberdade</h3>
-            <p>Um curso bem estruturado funciona mesmo enquanto você descansa. É renda trabalhando de forma inteligente!</p>
-        </div>
-        
-        <div class="card">
-            <h3>💎 Seu Conhecimento Vale Ouro</h3>
-            <p>Pessoas pagam para aprender com quem já tem resultado. Não subestime tudo o que você já conquistou!</p>
-        </div>
-    </div>
-</section>
-
-<!-- Seção Conteúdo/Módulos -->
-<section id="modulos">
-    <h2>📚 O Que Você Vai Aprender</h2>
-    
-    <div class="modulo" onclick="toggleModulo(this)">
-        <div class="modulo-cabecalho">🧁 Módulo 1 — Defina Seu Público e Diferencial <span>▼</span></div>
-        <div class="modulo-conteudo">
-            <ul class="beneficios">
-                <li>Quem é a sua aluna ideal?</li>
-                <li>Como encontrar seu diferencial no mercado</li>
-                <li>Sua frase de posicionamento pronta para usar</li>
-                <li>Por que não tentar vender para "todo mundo"</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="modulo" onclick="toggleModulo(this)">
-        <div class="modulo-cabecalho">🍫 Módulo 2 — Estruture Um Curso Vendável <span>▼</span></div>
-        <div class="modulo-conteudo">
-            <ul class="beneficios">
-                <li>Como escolher um nome que vende</li>
-                <li>Estrutura completa de módulos e aulas</li>
-                <li>Prometa resultados, não apenas receitas</li>
-                <li>Ideias de bônus que valorizam seu curso</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="modulo" onclick="toggleModulo(this)">
-        <div class="modulo-cabecalho">💰 Módulo 3 — Quanto Cobrar? Precificação Correta <span>▼</span></div>
-        <div class="modulo-conteudo">
-            <ul class="beneficios">
-                <li>Fatores que definem seu preço</li>
-                <li>Fórmula simples: Preço = Valor + Resultado</li>
-                <li>Faixas de preço sugeridas: Básico, Completo e VIP</li>
-                <li>Estratégia de preço de lançamento</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="modulo" onclick="toggleModulo(this)">
-        <div class="modulo-cabecalho">📱 Módulo 4 — Construa Confiança e Divulgue <span>▼</span></div>
-        <div class="modulo-conteudo">
-            <ul class="beneficios">
-                <li>Como criar autoridade antes de vender</li>
-                <li>Conteúdos que funcionam no Instagram e TikTok</li>
-                <li>Fotos e vídeos que atraem alunas</li>
-                <li>Depoimentos que convencem qualquer pessoa</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="modulo" onclick="toggleModulo(this)">
-        <div class="modulo-cabecalho">🚀 Módulo 5 — Lançamento e Pós-Venda <span>▼</span></div>
-        <div class="modulo-conteudo">
-            <ul class="beneficios">
-                <li>Elementos de uma página de venda irresistível</li>
-                <li>Plano de lançamento passo a passo</li>
-                <li>Como transformar alunas em fãs</li>
-                <li>Oportunidades de venda repetida e indicações</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- Seção Preço -->
-<section id="preco">
-    <h2>💎 Investimento</h2>
-    
-    <div class="preco-box">
-        <p>✅ Guia completo em PDF + Modelos prontos para usar</p>
-        <p>✅ Estrutura completa do curso de doces</p>
-        <p>✅ Estratégias de divulgação e preços</p>
-        <p>✅ Exemplos reais e práticos</p>
-        
-        <div class="preco-destaque">Acesso Gratuito! 🎁</div>
-        <p>Use todo o conteúdo para construir seu curso de doces e comece a vender!</p>
-        
-        <a href="#" class="botao">🍬 Começar Agora</a>
-        <p style="margin-top: 20px; font-size: 0.9em; color: #888;">Clique e salve em seu computador 💛</p>
-    </div>
-</section>
-
-<!-- Seção Dicas Extras -->
 <section>
-    <h2>💡 Dica de Ouro</h2>
-    <div class="intro">
-        <p><strong>"Você não precisa ser perfeita para começar. Você só precisa começar para ficar perfeita!"</strong></p>
-        <br>
-        <p>Comece simples, entregue muito valor e vá melhorando com o tempo. Cada aluna é uma oportunidade de aprender e crescer. Acredite no seu trabalho — ele tem poder de transformar vidas! 🍬✨</p>
+    <div class="destaque">
+        <h2>💛 Bem-vinda!</h2>
+        <p>Se você já sabe fazer doces maravilhosos e quer ensinar outras pessoas — e ganhar dinheiro com isso — você está no lugar certo!</p>
     </div>
 </section>
 
-<!-- Seção Contato -->
-<section id="contato">
-    <h2>💬 Dúvidas?</h2>
-    <div class="intro">
-        <p>Se precisar de ajuda com qualquer parte do seu curso, é só voltar aqui e me perguntar! Estou sempre pronta para te ajudar. 💛</p>
-        <br>
-        <p>🍬 <strong>Boa sorte e muito sucesso no seu doce negócio!</strong> 🎉✨</p>
+<section>
+    <h2>✨ Por que vender um curso?</h2>
+    <div class="card">
+        <h3>💰 Renda que cresce</h3>
+        <p>Crie o curso uma vez e venda para muitas pessoas. Mais alunas = mais lucro, sem trabalhar mais horas!</p>
+    </div>
+    <div class="card">
+        <h3>🤝 Transforme vidas</h3>
+        <p>Você ajuda outras mulheres a conseguirem sua própria renda com doces. Isso é incrível!</p>
+    </div>
+    <div class="card">
+        <h3>⏰ Mais liberdade</h3>
+        <p>Seu curso trabalha por você mesmo quando você está descansando. Trabalhe de forma inteligente!</p>
     </div>
 </section>
 
-<!-- Rodapé -->
+<section>
+    <h2>📚 O que vai aprender</h2>
+    <div class="card">
+        <h3>1️⃣ Defina seu público</h3>
+        <p>Saiba exatamente para quem você está ensinando e descubra seu diferencial no mercado!</p>
+    </div>
+    <div class="card">
+        <h3>2️⃣ Estruture seu curso</h3>
+        <p>Organize o conteúdo em módulos, escolha um nome que vende e crie bônus irresistíveis!</p>
+    </div>
+    <div class="card">
+        <h3>3️⃣ Precifique certo</h3>
+        <p>Saiba quanto cobrar usando uma fórmula simples. Nem caro demais, nem barato demais!</p>
+    </div>
+    <div class="card">
+        <h3>4️⃣ Divulgue nas redes sociais</h3>
+        <p>Conteúdos que funcionam no Instagram, TikTok e WhatsApp. Atraia alunas todos os dias!</p>
+    </div>
+    <div class="card">
+        <h3>5️⃣ Lançamento e pós-venda</h3>
+        <p>Como fazer seu primeiro lançamento e manter suas alunas satisfeitas e indicando!</p>
+    </div>
+</section>
+
+<section>
+    <div class="destaque">
+        <h2>💎 Comece hoje!</h2>
+        <p><strong>"Você não precisa ser perfeita para começar. Comece para ficar perfeita!"</strong></p>
+        <p style="margin-top: 15px;">Acredite no seu trabalho. Seu conhecimento vale muito! 💛🍬</p>
+        <a href="#" class="botao">Quero Começar 🎉</a>
+    </div>
+</section>
+
 <footer>
-    <p>🍬 Confeitaria Rentável — Guia para Criar e Vender Seu Curso de Doces</p>
-    <p style="margin-top: 10px; font-size: 0.9em;">Feito com 💛 — São Paulo, Brasil</p>
+    <p>🍬 Confeitaria Rentável — Guia Completo</p>
+    <p>Feito com 💛 para você, doce empreendedora!</p>
 </footer>
-
-<script>
-// Função para abrir/fechar os módulos
-function toggleModulo(elemento) {
-    elemento.classList.toggle('aberto');
-}
-</script>
 
 </body>
 </html>
+
